@@ -1,6 +1,14 @@
 xxx
+<<<<<<< HEAD
 fds
 zzz\\\
 aaa
 third
 fdsafdgre
+=======
+yyy
+rewterwt
+aaa
+dev
+fdsgkre
+>>>>>>> dev
