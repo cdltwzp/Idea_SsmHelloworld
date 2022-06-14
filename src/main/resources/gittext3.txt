@@ -7,6 +7,7 @@ third
 fdsafdgre
 =======
 yyy
+<<<<<<< HEAD
 rewterwt
 aaa
 dev
@@ -14,3 +15,8 @@ fdsgkre
 >>>>>>> dev
 
 forth commit
+=======
+zzz
+dev
+fdsfdsafd
+>>>>>>> 5fb8982 (dev commit rebase test)
