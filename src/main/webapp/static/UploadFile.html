@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传测算页面</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+
+</head>
+<body>
+<!--/commit ==> http://localhost:8080/commit -->
+<!--commit ==> http://localhost:8080/SsmHelloWorld/static/commit -->
+<form action="../fileUpload" method="post" enctype="multipart/form-data">
+    请输入姓名 <input type="text" name="name">
+    请输入年龄 <input type="text" name="age">
+    上传文件 <input type="file" name="file1">
+    上传文件<input type="submit">
+</form>
+<button id="sendAjax">发起ajax</button>
+
+<script type="text/javascript">
+
+    $("#sendAjax").click(() => {
+        $.ajax({
+            //url
+            url: 'http://localhost:8080/SsmHelloWorld/ajax',
+            //参数
+            data: JSON.stringify({a:100, b:200}),
+            //请求类型
+            type: 'POST',
+            //响应体结果
+            contentType: "application/json;charset=utf-8",
+            dataType: 'json',
+            //成功的回调
+            success: function(data){
+               alert(data);
+            },
+            //超时时间
+            timeout: 200000,
+            //失败的回调
+            error: function(){
+                console.log('出错啦!!');
+            }
+        });
+    })
+</script>
+</body>
+</html>
